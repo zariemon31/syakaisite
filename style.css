@@ -1,0 +1,106 @@
+/* 全体 */
+body {
+  font-family: "Yu Gothic", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f3f6ff;
+  color: #333;
+  line-height: 1.8;
+}
+
+/* ヘッダー */
+header {
+  background: linear-gradient(135deg, #1f3c88, #2a4d9b);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+/* ナビバー */
+nav {
+  background: #1f3570;
+  padding: 12px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: white;
+  margin: 0 18px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ヒーローセクション */
+.hero {
+  background: url('https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1200&q=60') center/cover;
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+/* メイン */
+main {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* カードレイアウト */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #2a4d9b;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #2a4d9b;
+  color: white;
+  margin-top: 50px;
+}
